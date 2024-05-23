@@ -3,6 +3,25 @@
 ##Introduction
 This is a News API service built using Spring Boot. It allows users to fetch top news articles, search them by keyword, author or title. It also handles caching.
 
+## Features
+
+- Fetch top articles
+- Search news articles by keyword
+- Find news articles by title
+- Find news articles by author
+- Caching to reduce redundancy
+- Swagger for API documentation
+- Basic authentication using Spring Security
+
+## Technologies Used
+
+- Spring Boot
+- Spring Security
+- Spring Cache
+- RestTemplate
+- Swagger (Springdoc OpenAPI)
+- Maven
+
 ##Setup Instructions
 
 ####Prerequisites
@@ -21,6 +40,11 @@ mvn clean install
 
 ####Run the application
 mvn spring-boot:run
+
+##Security
+This project uses basic authentication.
+username: newsapi
+password: springapi
 
 ##API Endpoints
 
@@ -54,3 +78,8 @@ Response: List of articles written by the specified author
 
 ##Swagger Documentation
 http://localhost:8080/swagger-ui.html
+
+##Contact
+For any questions or inquiries, please contact:
+Name: Yashaswini Golla
+email: yashaswini99g@gmail.com
