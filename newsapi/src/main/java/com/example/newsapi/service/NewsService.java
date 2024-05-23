@@ -48,7 +48,7 @@ public class NewsService {
     public List<Article> searchArticlesByKeyword(String keyword) {
         String url = UriComponentsBuilder.fromHttpUrl(apiUrl)
                 .queryParam("apiKey", apiKey)
-                .queryParam("k", keyword)
+                .queryParam("q", keyword)
                 .toUriString();
         logger.info("Searching articles with keyword from URL: {}", url);
         NewsApiResponse response = restTemplate.getForObject(url, NewsApiResponse.class);
